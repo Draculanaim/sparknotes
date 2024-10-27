@@ -95,7 +95,7 @@ class HomeActivity extends StatelessWidget {
         ),
       ),
       backgroundColor: Colors.black,
-      bottomNavigationBar: BottomNavigationBar(items: ),
+      //bottomNavigationBar: BottomNavigationBar(items: ),
       
     );
   }
