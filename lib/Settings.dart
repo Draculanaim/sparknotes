@@ -22,7 +22,11 @@ class SettingsActivity extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        title: Text('Settings'),
+        backgroundColor: Colors.lightBlueAccent,
+      ),
     );
   }
 }

@@ -32,14 +32,15 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Spark Notes'),
+
+        //title: Text('Spark Notes'),
         actions: [
           IconButton(onPressed: (){}, icon: Icon(Icons.list),padding: EdgeInsets.all(3),),
           IconButton(onPressed: (){}, icon: Icon(Icons.person),padding: EdgeInsets.all(3),),
         ],
         backgroundColor: Colors.white70,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20), side: BorderSide.none),
+            borderRadius: BorderRadius.circular(30), side: BorderSide.none),
       ),
       drawer: Drawer(
         backgroundColor: Colors.white,
@@ -96,6 +97,13 @@ class HomeActivity extends StatelessWidget {
       ),
       backgroundColor: Colors.black,
       //bottomNavigationBar: BottomNavigationBar(items: ),
+      floatingActionButton: FloatingActionButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: Icon(Icons.add),
+        onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>CreateActivity()),);},
+      ),
       
     );
   }

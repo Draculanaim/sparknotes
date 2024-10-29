@@ -22,7 +22,11 @@ class HelpActivity extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        title: Text('Help & feedback'),
+        backgroundColor: Colors.lightBlueAccent,
+      ),
     );
   }
 }

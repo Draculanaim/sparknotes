@@ -22,7 +22,11 @@ class ReminderActivity extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        title: Text('Reminder'),
+        backgroundColor: Colors.lightBlueAccent,
+      ),
     );
   }
 }
